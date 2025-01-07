@@ -1,0 +1,13 @@
+services:
+    node:
+        image: 'node:23-alpine'
+        container_name: node
+        restart: unless-stopped
+        working_dir: /srv/app/
+        tty: true
+        volumes:
+            - ./:/srv/app
+            - nodes_modules:/srv/app/node_modules
+
+volumes:
+    nodes_modules:
