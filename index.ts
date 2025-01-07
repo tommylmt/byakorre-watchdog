@@ -8,8 +8,8 @@ const scrapper: Scrapper = new Scrapper();
 scrapper.crawl().then((data): void => {
     bot.photo(Scrapper.filePath, 'ScreenShot Ikea');
     bot.post(data.isAvailable
-        ? '✅ Byakorre est disponible : ' + data.link
-        : '❌ Byakorre n\'est pas disponible sur Ikea France'
+        ? '✅ @tommylmt Byakorre est disponible : ' + data.link
+        : '❌ @tommylmt Byakorre n\'est pas disponible sur Ikea France'
     );
 
     setTimeout(() => { process.exit(0) }, 2000);

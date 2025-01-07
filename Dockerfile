@@ -12,4 +12,5 @@ WORKDIR /srv/app/
 
 COPY . .
 
+RUN chmod -R 777 ./
 RUN npm install
