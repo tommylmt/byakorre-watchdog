@@ -16,8 +16,8 @@ export default class Bot {
         return process.env.TELEGRAM_CHAT_ID;
     }
 
-    public post(message: string): void {
-        this.telegraf.telegram.sendMessage(this.channelId, message)
+    public post(message: string, options: object = {}): void {
+        this.telegraf.telegram.sendMessage(this.channelId, message, options)
     }
 
     public photo(path: string, filename: string): void
