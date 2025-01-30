@@ -40,6 +40,6 @@ export default class Scrapper {
     }
 
     private get target(): string {
-        return process.env.WATCHDOG_URL;
+        return 'https://www.ikea.com/fr/fr/search/?q=byakorre';
     }
 }
